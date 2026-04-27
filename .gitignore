@@ -1,0 +1,36 @@
+# GloVe embeddings (large files — download via notebook)
+glove.*.txt
+glove.*.zip
+
+# Archive files
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Model files (large — optional, uncomment if needed)
+# *.h5
+# *.keras
+# saved_model/
