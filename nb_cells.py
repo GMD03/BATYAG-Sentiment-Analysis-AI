@@ -127,7 +127,7 @@ def build_model(num_words, embed_dim, max_len, embedding_matrix=None):
             input_dim=num_words,
             output_dim=embed_dim,
             weights=[embedding_matrix],
-            trainable=False,  # freeze GloVe weights initially
+            trainable=False, 
             input_length=max_len
         )(inp)
     else:
@@ -215,9 +215,7 @@ print("  p_test min/max:", p_test.min(), p_test.max())
 
 print("\nTemperature:", T_opt)
 if not (0.01 < T_opt < 50):
-    print("Temperature is unusual — may indicate problems (very small or very large).")
-
-# Numeric metrics 
+    print("Temperature is unusual — may indicate problems (very small or very large).") 
 p_test_raw = p_test
 p_test_cal = probs_test_cal  
 print("\nMetrics on TEST set:")
